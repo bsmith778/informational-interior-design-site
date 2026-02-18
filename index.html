@@ -1,81 +1,249 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Oasis Interior Design</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oasis Interior Design | Home</title>
+  <meta name="description" content="Oasis Interior Design helps beginners learn design styles, simple room makeover tips, and how to create cohesive, cozy spaces." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<a href="#main" class="skip-link">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Oasis Interior Design</span>
+          <span class="brand-tag">Interior design made simple for everyday homes</span>
+        </span>
+      </a>
 
-<header>
-  <h1>Oasis Interior Design</h1>
+      <nav class="nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a aria-current="page" href="index.html">Home</a></li>
+          <li><a href="design-styles.html">Design Styles</a></li>
+          <li><a href="beginner-tips.html">Beginner Tips</a></li>
+          <li><a href="room-makeovers.html">Room Makeovers</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
 
-  <nav aria-label="Main navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Design Styles</a></li>
-      <li><a href="#">Beginner Tips</a></li>
-      <li><a href="#">Room Makeovers</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main id="main">
-
-  <section>
-    <h2>Interior Design Made Simple for Everyday Homes</h2>
-    <p>
-      Oasis Interior Design is an informational website created to help beginners
-      understand interior design styles, simple room makeover tips, and how to
-      create cohesive spaces.
-    </p>
-  </section>
-
-  <section>
-    <h2>Design Styles</h2>
-
-    <div class="style-box">
-      <h3>Modern</h3>
-      <p>Clean lines, neutral colors, and simple furniture.</p>
+        <!-- Simple mobile menu without JavaScript -->
+        <details class="nav-mobile">
+          <summary aria-label="Open menu">☰ Menu</summary>
+          <div class="nav-panel">
+            <a aria-current="page" href="index.html">Home</a>
+            <a href="design-styles.html">Design Styles</a>
+            <a href="beginner-tips.html">Beginner Tips</a>
+            <a href="room-makeovers.html">Room Makeovers</a>
+            <a href="about.html">About</a>
+          </div>
+        </details>
+      </nav>
     </div>
+  </header>
 
-    <div class="style-box">
-      <h3>Minimalist</h3>
-      <p>Clutter-free spaces focused on function and simplicity.</p>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Interior Design Made Simple for Everyday Homes</h1>
+          <p>
+            Beginner-friendly design styles, practical tips, and simple room makeovers—
+            so your space can feel sophisticated <em>and</em> cozy without being overwhelming.
+          </p>
+
+          <div class="button-row">
+            <a class="btn btn-primary" href="design-styles.html">Explore Design Styles</a>
+            <a class="btn btn-ghost" href="#topics">Start with Beginner Topics</a>
+          </div>
+
+          <ul class="hero-points" aria-label="Highlights">
+            <li>Warm, neutral color ideas</li>
+            <li>Simple measuring + layout tips</li>
+            <li>Easy “before/after” makeover steps</li>
+          </ul>
+        </div>
+
+        <div class="hero-collage" aria-label="Interior design style collage">
+          <figure class="collage-tile">
+            <img src="modern-living-room.jpg" alt="Modern living room with neutral furniture, soft lighting, and clean lines">
+            <figcaption>Modern</figcaption>
+          </figure>
+
+          <figure class="collage-tile">
+            <img src="minimalist-living-room.jpg" alt="Minimalist living room with light neutral furniture, natural light, and minimal decor">
+            <figcaption>Minimalist</figcaption>
+          </figure>
+
+          <figure class="collage-tile">
+            <img src="boho-living-room.jpg" alt="Boho living room with woven furniture, warm earth tones, plants, and layered textures">
+            <figcaption>Boho</figcaption>
+          </figure>
+
+          <figure class="collage-tile">
+            <img src="farmhouse-kitchen.jpg" alt="Farmhouse kitchen with wooden cabinets, warm lighting, rustic decor, and natural wood floors">
+            <figcaption>Farmhouse</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN STYLES -->
+    <section class="section">
+      <div class="container">
+        <h2>Design Styles</h2>
+        <p class="lead">
+          Not sure what your style is yet? Start here. These quick descriptions help beginners
+          recognize what they love—and build a cohesive plan.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <img class="card-img" src="modern-living-room.jpg" alt="Modern living room with neutral furniture and curved shapes">
+            <div class="card-body">
+              <h3>Modern</h3>
+              <p>Clean lines, open space, and intentional decor. Modern rooms often use neutral colors with a few statement pieces.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="minimalist-living-room.jpg" alt="Minimalist living room with soft white seating and natural light">
+            <div class="card-body">
+              <h3>Minimalist</h3>
+              <p>Calm and clutter-free. Minimalism focuses on function, airy layouts, and a few quality pieces that feel peaceful.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="boho-living-room.jpg" alt="Boho living room with rattan furniture, plants, and layered textures">
+            <div class="card-body">
+              <h3>Boho</h3>
+              <p>Warm and relaxed. Boho blends natural materials, plants, and layered patterns to create a cozy, collected vibe.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="farmhouse-kitchen.jpg" alt="Farmhouse kitchen with rustic wood elements and warm neutral colors">
+            <div class="card-body">
+              <h3>Farmhouse</h3>
+              <p>Cozy and welcoming. Farmhouse mixes warm woods, soft neutrals, and rustic details for comfort that feels timeless.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-cta">
+          <p><strong>Tip:</strong> Choose one main style, then borrow small details from a second style for personality without chaos.</p>
+          <a class="btn btn-primary" href="design-styles.html">See Style Guides</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEGINNER TOPICS -->
+    <section class="section section-alt" id="topics">
+      <div class="container">
+        <h2>Beginner Topics</h2>
+        <p class="lead">
+          These are the basics that make your home look “put together.”
+          Start with one topic and try it in a single room.
+        </p>
+
+        <div class="grid topics-grid">
+          <article class="topic">
+            <h3>How to choose a color scheme</h3>
+            <p>Pick 1 main neutral, 1 supporting neutral, and 1 accent. Repeat the accent 3+ times so the room feels intentional.</p>
+          </article>
+
+          <article class="topic">
+            <h3>How to measure a room</h3>
+            <p>Measure walls, doorways, and key walkways. Always check furniture sizes before buying to avoid cramped layouts.</p>
+          </article>
+
+          <article class="topic">
+            <h3>How to mix patterns</h3>
+            <p>Use the “big, medium, small” pattern rule and keep a shared color. This creates variety without feeling messy.</p>
+          </article>
+
+          <article class="topic">
+            <h3>How to pick the right furniture size</h3>
+            <p>Scale matters. Leave 30–36 inches for walking paths and avoid furniture that is too small for the room.</p>
+          </article>
+
+          <article class="topic">
+            <h3>Mistakes to avoid</h3>
+            <p>Buying without measuring, rugs that are too small, and relying on one overhead light are the most common beginner mistakes.</p>
+          </article>
+
+          <article class="topic">
+            <h3>How to create a cohesive space</h3>
+            <p>Repeat 2–3 colors and 2–3 materials (wood, metal, linen). Consistency is what makes spaces feel designed.</p>
+          </article>
+        </div>
+
+        <div class="button-row">
+          <a class="btn btn-primary" href="beginner-tips.html">View All Tips</a>
+          <a class="btn btn-ghost" href="room-makeovers.html">See Makeovers</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMPLE MAKEOVER PREVIEW -->
+    <section class="section">
+      <div class="container">
+        <h2>Simple Room Makeovers</h2>
+        <p class="lead">
+          Makeovers don’t need to be expensive. Small changes can make a room feel brighter, warmer, and more finished.
+        </p>
+
+        <div class="two-col">
+          <div class="panel">
+            <h3>Living Room Refresh</h3>
+            <ul>
+              <li>Add a bigger rug (front legs on at minimum)</li>
+              <li>Layer lighting: overhead + lamp + accent</li>
+              <li>Repeat an accent color in pillows and art</li>
+              <li>Add one large statement piece (mirror or artwork)</li>
+            </ul>
+            <p class="small-note"><strong>Budget tip:</strong> Swap pillow covers + add a throw blanket for a fast upgrade.</p>
+          </div>
+
+          <div class="panel">
+            <h3>Bedroom Cozy Upgrade</h3>
+            <ul>
+              <li>Use layered bedding (neutral base + texture)</li>
+              <li>Add matching bedside lighting</li>
+              <li>Hang art at eye level</li>
+              <li>Use warm bulbs for a soft glow</li>
+            </ul>
+            <p class="small-note"><strong>Budget tip:</strong> Matching lamps make the room feel intentional instantly.</p>
+          </div>
+        </div>
+
+        <div class="section-cta">
+          <a class="btn btn-primary" href="room-makeovers.html">View Room Makeovers</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Oasis Interior Design</strong>
+        <p class="footer-text">Helping beginners feel confident designing their homes.</p>
+        <small>&copy; 2026 Oasis Interior Design</small>
+      </div>
+
+      <div class="footer-links" aria-label="Footer links">
+        <a href="design-styles.html">Design Styles</a>
+        <a href="beginner-tips.html">Beginner Tips</a>
+        <a href="room-makeovers.html">Room Makeovers</a>
+        <a href="about.html">About</a>
+      </div>
     </div>
-
-    <div class="style-box">
-      <h3>Boho</h3>
-      <p>Layered textures, plants, and warm colors.</p>
-    </div>
-
-    <div class="style-box">
-      <h3>Farmhouse</h3>
-      <p>Cozy, rustic elements with soft neutral tones.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Beginner Design Tips</h2>
-    <ul>
-      <li>Choose paint colors last</li>
-      <li>Measure your room before buying furniture</li>
-      <li>Lighting makes a big difference</li>
-      <li>Use mirrors to make rooms feel larger</li>
-    </ul>
-  </section>
-
-</main>
-
-<footer>
-  <p>&copy; 2026 Oasis Interior Design</p>
-</footer>
-
+  </footer>
 </body>
 </html>
-
