@@ -414,4 +414,87 @@ img {
 
   .collage-tile img { height: 140px; }
 }
+/* --- Form styles (Module 3: Forms) --- */
+.form-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px;
+  max-width: 900px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.form-field label {
+  display: block;
+  font-weight: 800;
+  color: var(--heading);
+  margin-bottom: 6px;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fff;
+  color: var(--text);
+}
+
+.form-field input:focus-visible,
+.form-field select:focus-visible {
+  outline: 3px solid var(--heading);
+  outline-offset: 2px;
+}
+
+.hint {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 26px;
+}
+
+.checkbox-field label {
+  margin: 0;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.form-message {
+  margin-top: 10px;
+  font-weight: 800;
+}
+
+.form-message.success {
+  color: var(--sage);
+}
+
+.form-message.error {
+  color: var(--accent-dark);
+}
+
+@media (max-width: 700px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .checkbox-field {
+    padding-top: 0;
+  }
+}
 
