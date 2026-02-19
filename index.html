@@ -3,8 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oasis Interior Design | Home</title>
+  <title>Oasis Interior Design | Interior Design Tips for Beginners</title>
+
   <meta name="description" content="Oasis Interior Design helps beginners learn design styles, simple room makeover tips, and how to create cohesive, cozy spaces." />
+
+  <!-- Simple SEO extras (safe for school projects) -->
+  <meta name="robots" content="index, follow" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -30,7 +35,6 @@
           <li><a href="about.html">About</a></li>
         </ul>
 
-        <!-- Simple mobile menu without JavaScript -->
         <details class="nav-mobile">
           <summary aria-label="Open menu">☰ Menu</summary>
           <div class="nav-panel">
@@ -50,7 +54,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <h1>Interior Design Made Simple for Everyday Homes</h1>
+          <h1>Interior Design Tips for Beginners</h1>
           <p>
             Beginner-friendly design styles, practical tips, and simple room makeovers—
             so your space can feel sophisticated <em>and</em> cozy without being overwhelming.
@@ -59,12 +63,13 @@
           <div class="button-row">
             <a class="btn btn-primary" href="design-styles.html">Explore Design Styles</a>
             <a class="btn btn-ghost" href="#topics">Start with Beginner Topics</a>
+            <a class="btn btn-ghost" href="#free-guide">Get the Free Starter Checklist</a>
           </div>
 
           <ul class="hero-points" aria-label="Highlights">
             <li>Warm, neutral color ideas</li>
             <li>Simple measuring + layout tips</li>
-            <li>Easy “before/after” makeover steps</li>
+            <li>Easy makeover steps</li>
           </ul>
         </div>
 
@@ -95,7 +100,7 @@
     <!-- DESIGN STYLES -->
     <section class="section">
       <div class="container">
-        <h2>Design Styles</h2>
+        <h2>Popular Interior Design Styles</h2>
         <p class="lead">
           Not sure what your style is yet? Start here. These quick descriptions help beginners
           recognize what they love—and build a cohesive plan.
@@ -106,7 +111,7 @@
             <img class="card-img" src="modern-living-room.jpg" alt="Modern living room with neutral furniture and curved shapes">
             <div class="card-body">
               <h3>Modern</h3>
-              <p>Clean lines, open space, and intentional decor. Modern rooms often use neutral colors with a few statement pieces.</p>
+              <p>Clean lines, open space, and intentional decor. Modern rooms often use neutrals with a few statement pieces.</p>
             </div>
           </article>
 
@@ -145,7 +150,7 @@
     <!-- BEGINNER TOPICS -->
     <section class="section section-alt" id="topics">
       <div class="container">
-        <h2>Beginner Topics</h2>
+        <h2>Beginner Interior Design Topics</h2>
         <p class="lead">
           These are the basics that make your home look “put together.”
           Start with one topic and try it in a single room.
@@ -169,7 +174,7 @@
 
           <article class="topic">
             <h3>How to pick the right furniture size</h3>
-            <p>Scale matters. Leave 30–36 inches for walking paths and avoid furniture that is too small for the room.</p>
+            <p>Leave 30–36 inches for walking paths and avoid furniture that is too small for the room.</p>
           </article>
 
           <article class="topic">
@@ -190,43 +195,54 @@
       </div>
     </section>
 
-    <!-- SIMPLE MAKEOVER PREVIEW -->
-    <section class="section">
+    <!-- FORM + JS (Engagement + Marketing) -->
+    <section class="section" id="free-guide">
       <div class="container">
-        <h2>Simple Room Makeovers</h2>
+        <h2>Free Starter Checklist</h2>
         <p class="lead">
-          Makeovers don’t need to be expensive. Small changes can make a room feel brighter, warmer, and more finished.
+          Want a quick plan? Enter your email to get a beginner-friendly starter checklist.
+          (For this class project, this form does not collect or store data.)
         </p>
 
-        <div class="two-col">
-          <div class="panel">
-            <h3>Living Room Refresh</h3>
-            <ul>
-              <li>Add a bigger rug (front legs on at minimum)</li>
-              <li>Layer lighting: overhead + lamp + accent</li>
-              <li>Repeat an accent color in pillows and art</li>
-              <li>Add one large statement piece (mirror or artwork)</li>
-            </ul>
-            <p class="small-note"><strong>Budget tip:</strong> Swap pillow covers + add a throw blanket for a fast upgrade.</p>
+        <form id="signupForm" class="form-card" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Brittney" autocomplete="name" />
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+              <small class="hint">Required (example: you@example.com)</small>
+            </div>
           </div>
 
-          <div class="panel">
-            <h3>Bedroom Cozy Upgrade</h3>
-            <ul>
-              <li>Use layered bedding (neutral base + texture)</li>
-              <li>Add matching bedside lighting</li>
-              <li>Hang art at eye level</li>
-              <li>Use warm bulbs for a soft glow</li>
-            </ul>
-            <p class="small-note"><strong>Budget tip:</strong> Matching lamps make the room feel intentional instantly.</p>
-          </div>
-        </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="room">Which room are you working on?</label>
+              <select id="room" name="room">
+                <option value="Living Room">Living Room</option>
+                <option value="Bedroom">Bedroom</option>
+                <option value="Kitchen">Kitchen</option>
+                <option value="Bathroom">Bathroom</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
 
-        <div class="section-cta">
-          <a class="btn btn-primary" href="room-makeovers.html">View Room Makeovers</a>
-        </div>
+            <div class="form-field checkbox-field">
+              <input id="agree" name="agree" type="checkbox" />
+              <label for="agree">I understand this is a class project demo form.</label>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Get My Checklist</button>
+
+          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -245,5 +261,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
