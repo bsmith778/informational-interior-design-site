@@ -1,1 +1,130 @@
-about.html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oasis Interior Design | About</title>
+  <meta name="description" content="About Oasis Interior Design: a beginner-friendly interior design site with tips, styles, and simple makeovers." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Oasis Interior Design</span>
+          <span class="brand-tag">Interior design made simple for everyday homes</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="design-styles.html">Design Styles</a></li>
+          <li><a href="beginner-tips.html">Beginner Tips</a></li>
+          <li><a href="room-makeovers.html">Room Makeovers</a></li>
+          <li><a aria-current="page" href="about.html">About</a></li>
+        </ul>
+
+        <details class="nav-mobile">
+          <summary aria-label="Open menu">☰ Menu</summary>
+          <div class="nav-panel">
+            <a href="index.html">Home</a>
+            <a href="design-styles.html">Design Styles</a>
+            <a href="beginner-tips.html">Beginner Tips</a>
+            <a href="room-makeovers.html">Room Makeovers</a>
+            <a aria-current="page" href="about.html">About</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1>About Oasis Interior Design</h1>
+        <p class="lead">
+          Oasis Interior Design is an informational site created to help beginners feel confident designing their homes.
+          The goal is to make design simple, practical, and approachable.
+        </p>
+
+        <div class="two-col">
+          <article class="panel">
+            <h2>My Mission</h2>
+            <p>
+              My mission is to help beginners understand interior design styles, learn simple room makeover tips,
+              and create cohesive spaces without feeling overwhelmed.
+            </p>
+            <ul>
+              <li>Simple style guides</li>
+              <li>Beginner-friendly tips</li>
+              <li>Budget-aware makeovers</li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <h2>Photo Placeholder</h2>
+            <p class="hint">Add your photo later (optional). For now this is a placeholder.</p>
+            <div class="photo-placeholder" role="img" aria-label="Photo placeholder box">
+              Photo Placeholder
+            </div>
+            <p class="small-note"><strong>Note:</strong> This is a class project site and is still in progress.</p>
+          </article>
+        </div>
+
+        <h2 style="margin-top: 18px;">Contact (Optional)</h2>
+        <p class="lead">
+          This form is optional and for class demonstration only. It does not send or store messages.
+        </p>
+
+        <form id="contactForm" class="form-card" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="contactName">Name</label>
+              <input id="contactName" name="contactName" type="text" placeholder="Your name" autocomplete="name">
+            </div>
+
+            <div class="form-field">
+              <label for="contactEmail">Email <span aria-hidden="true">*</span></label>
+              <input id="contactEmail" name="contactEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+              <small class="hint">Required (example: you@example.com)</small>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p id="contactMessage" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Oasis Interior Design</strong>
+        <p class="footer-text">Helping beginners feel confident designing their homes.</p>
+        <small>&copy; 2026 Oasis Interior Design</small>
+      </div>
+
+      <div class="footer-links" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <a href="design-styles.html">Design Styles</a>
+        <a href="beginner-tips.html">Beginner Tips</a>
+        <a href="room-makeovers.html">Room Makeovers</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
